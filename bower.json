@@ -6,6 +6,7 @@
     "Matt Momont <matt.momont@gmail.com>",
     "Bill Reed <billnreed@gmail.com>"
   ],
+  "main": "src/favicon-bubble.html",
   "keywords": [
     "web-components",
     "favicon",
