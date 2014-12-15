@@ -8,7 +8,7 @@
             Polymer('favicon-bubble', {
                 width: 7,
                 height: 9,
-                font: '10px arial',
+                font: 10 * (window.devicePixelRatio || 1) + 'px arial',
                 colour: '#ffffff',
                 background: '#F03D25',
                 fallback: true,
