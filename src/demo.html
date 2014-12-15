@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>&lt;favicon-bubble&gt;</title>
+
+	    <link rel="shortcut icon" href="p-logo-32.png">
+
+	    <script src="bower_components/tinycon/tinycon.js"></script>
+
+	    <link rel="import" href="bower_components/polymer/polymer.html">
+		<link rel="import" href="favicon-bubble.html">
+		<link rel="import" href="bower_components/core-input/core-input.html">
+	</head>
+	<body>
+		<!-- Demo container to show data binding with the favicon-bubble -->
+		<polymer-element name="favicon-bubble-container">
+	    <template>
+	        <favicon-bubble label="{{value}}"></favicon-bubble>
+	        <input is="core-input" type="text" value="{{value}}" placeholder="Enter a value. Then look at your favicon.">
+	    </template>
+	    <script>
+	        (function() {
+	            Polymer('favicon-bubble-container', {});
+	        })();
+	    </script>
+	</polymer-element>
+
+	<favicon-bubble-container></favicon-bubble-container>
+
+	</body>
+</html>

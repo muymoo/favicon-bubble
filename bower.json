@@ -1,0 +1,25 @@
+{
+  "name": "favicon-bubble",
+  "version": "0.0.1",
+  "homepage": "https://github.com/billnreed/game-of-life",
+  "authors": [
+    "Matt Momont <matt.momont@gmail.com>",
+    "Bill Reed <billnreed@gmail.com>"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "tinycon": "~0.6.3",
+    "polymer": "Polymer/polymer#~0.5.2",
+    "core-input": "Polymer/core-input#~0.5.2"
+  }
+}

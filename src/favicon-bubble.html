@@ -1,0 +1,30 @@
+<polymer-element name="favicon-bubble" attributes="label width height font colour background fallback">
+    <script>
+        (function() {
+            Polymer('favicon-bubble', {
+                width: 7,
+                height: 9,
+                font: 10 * (window.devicePixelRatio || 1) + 'px arial',
+                colour: '#ffffff',
+                background: '#F03D25',
+                fallback: true,
+                label: '',
+                ready: function() {
+                    Tinycon.setOptions({
+                        width: this.width,
+                        height: this.height,
+                        font: this.font,
+                        colour: this.colour,
+                        background: this.background,
+                        fallback: this.fallback
+                    });
+
+                    Tinycon.setBubble(this.label);
+                },
+                labelChanged: function(oldValue, newValue) {
+                    Tinycon.setBubble(newValue);
+                }
+            });
+        })();
+    </script>
+</polymer-element>
