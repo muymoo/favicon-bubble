@@ -1,12 +1,16 @@
 {
   "name": "favicon-bubble",
   "version": "0.0.1",
-  "homepage": "https://github.com/billnreed/game-of-life",
+  "homepage": "https://github.com/muymoo/favicon-bubble",
   "authors": [
     "Matt Momont <matt.momont@gmail.com>",
     "Bill Reed <billnreed@gmail.com>"
   ],
-  "keywords": [],
+  "keywords": [
+    "web-components",
+    "favicon",
+    "tinycon"
+  ],
   "license": "MIT",
   "private": false,
   "ignore": [
@@ -16,7 +20,6 @@
     "test",
     "tests"
   ],
-  "devDependencies": {},
   "dependencies": {
     "tinycon": "~0.6.3",
     "polymer": "Polymer/polymer#~0.5.2",
