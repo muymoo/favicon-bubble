@@ -4,9 +4,7 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         project: {
-            base: 'src',
-            bower: 'bower_components',
-            test: 'test'
+            base: 'src'
         },
 
         connect: {
@@ -21,10 +19,6 @@ module.exports = function(grunt) {
                     },
                     middleware: function(connect) {
                         return [
-                            connect().use(
-                                '/bower_components',
-                                connect.static('./bower_components')
-                            ),
                             connect.static('./src')
                         ];
                     }
