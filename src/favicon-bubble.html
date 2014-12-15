@@ -2,11 +2,7 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
 <!-- Define your custom element -->
-<polymer-element name="favicon-bubble" attributes="value width height font colour background fallback">
-
-    <template>
-    </template>
-
+<polymer-element name="favicon-bubble" attributes="label width height font colour background fallback">
     <script>
         (function() {
             Polymer('favicon-bubble', {
@@ -16,6 +12,7 @@
                 colour: '#ffffff',
                 background: '#F03D25',
                 fallback: true,
+                label: ''
                 ready: function() {
                     Tinycon.setOptions({
                         width: this.width,
@@ -26,10 +23,9 @@
                         fallback: this.fallback
                     });
 
-                    Tinycon.setBubble(this.value);
+                    Tinycon.setBubble(this.label);
                 }
             });
         })();
     </script>
-
 </polymer-element>
