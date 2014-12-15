@@ -1,0 +1,21 @@
+<!-- Import Polymer -->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!-- Define your custom element -->
+<polymer-element name="favicon-bubble" attributes="value">
+
+    <template>
+    </template>
+
+    <script>
+        (function() {
+            Polymer('favicon-bubble', {
+                value: value,
+                ready: function() {
+                    Tinycon.setBubble(this.value);
+                }
+            });
+        })();
+    </script>
+
+</polymer-element>
